@@ -29,7 +29,7 @@ class Story extends React.Component {
       return <Error statusCode={503}/>
     }
     return (
-      <Layout title={data.title}>
+      <Layout title={data.title} backButton={true}>
         <main>
           <h1 className="data-title"><a href={data.url}>{data.title}</a></h1>
           <div className="data-details">
